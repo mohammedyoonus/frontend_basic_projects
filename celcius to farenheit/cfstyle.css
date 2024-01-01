@@ -1,0 +1,47 @@
+body{
+    background-color: antiquewhite;
+
+}
+.cfc{
+    text-align: center;
+    background-color: rgba(0, 0, 0,0.5);
+    padding: 20px;
+    margin: 200px auto;
+    width: 500px;
+    height: 600px;
+    border-radius: 10px;
+}
+h1{
+    color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+}
+#input{
+    padding-top: 20px;
+}
+#input input{
+    width:100%;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+button{
+    position: relative;top: 300px;
+    font-style: oblique;
+    font-size: 20px;
+    font-weight: 600px;
+    border-radius: 8px;
+    background-color: rgb(232, 232, 80);
+}
+button:hover{
+    cursor: pointer;
+    color:rgb(85, 66, 43);
+    transition-duration:4s;
+
+}
+#result{
+    color: aliceblue;
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+

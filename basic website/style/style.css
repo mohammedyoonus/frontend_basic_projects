@@ -1,0 +1,140 @@
+:root{
+    --blue:#1C77C3;
+    --pblue:#39A9DB;
+    --ablue:#40BCD8;
+    --orange:#F39237;
+    --red:#D63230;
+}
+body,h2,cpy{
+    margin:0;
+    padding:0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.landing{
+    background-image:url(../images/bus.jpg);
+    background-size:cover;
+    background-position:center;
+    height: 100vh;
+}
+.title1{
+    text-align: center;
+    border-radius:50%;
+    margin-top: 0px;
+    margin-bottom:  0px;
+    padding: 25px;
+    padding-bottom: 0px;
+    font-style: oblique;
+    font-size:75px;
+    color: var(--blue);
+    position: relative;top:-20px;
+    
+}
+.image-description{
+    height: 80px;
+    width:60px
+}
+.title2{
+    text-align: center;
+    padding-top: 0px;
+    font-style:italic;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--red);
+    position:relative;top: -15px;
+
+}
+.navbar{
+    display:flex;
+    color: #F39237;
+    
+}
+#Home{
+    flex:3;
+    text-decoration: none;
+    color: #F39237;
+    padding-left: 55px;
+    font-size: 20px;
+    font-style: italic;
+    margin:2px solid black;
+    position:relative;top:-15px;left: 30px;
+}
+#OurBuses{
+    flex:2;
+    text-decoration: none;
+    font-size: 20px;
+    font-style: italic;
+    color: #F39237;
+    word-spacing: 1px;
+    position:relative;top:-15px;left: 30px;
+    
+}
+#locations{
+    text-decoration: none;
+    flex:2;
+    font-size: 20px;
+    font-style: italic;
+    color: #F39237;
+    word-spacing: 1px;
+    position:relative;top:-15px;left: 30px;
+}
+#contactus{
+    flex:1;
+    text-decoration:none;
+    font-size: 20px;
+    font-style:italic;
+    color: #F39237;
+    position:relative;top:-15px;left: 30px;`
+}
+.btn{
+    display:flex;
+    justify-content: center;
+    padding-top: 260px;
+}
+button{
+    color: var(--red);
+    font-size: 20px;
+    background-color: rgba(122, 107, 80,0.4);
+    font-style: italic;
+    font-weight: bold;
+    border: 2px solid #142915;
+    border-radius: 10px;
+}
+button:hover{
+    transition-duration: 0.4s;
+    background-color: rgb(149, 237, 234);
+    box-shadow: 0 12px 16px 0 rgba(131, 25, 25, 0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#Home:hover{
+    color:#39A9DB;
+}
+#OurBuses:hover{
+    color:#39A9DB;
+}
+#locations:hover{
+    color: #39A9DB;
+}
+#contactus:hover{
+    color:#39A9DB;
+}
+.location{
+    background: linear-gradient(to right,rgb(157, 182, 194),rgb(64, 114, 155));
+    display: flex;
+    margin-bottom: 0;
+   
+}
+#loc{
+    color:#D63230;
+    font-style: italic;
+}
+#add{
+    margin-top: 1em;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+#add h3{
+    color:#cb4141;
+}
+#cpy{
+    background: linear-gradient(to right,rgb(157, 182, 194),rgb(64, 114, 155));
+    display:flex;
+}

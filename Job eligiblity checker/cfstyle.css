@@ -1,0 +1,44 @@
+body{
+    background-color: antiquewhite;
+
+}
+.cfc{
+    background-color: rgba(0, 0, 0,0.5);
+    padding: 20px;
+    margin: 200px auto;
+    width: 500px;
+    height: 600px;
+    border-radius: 10px;
+}
+h1{
+    color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+#input{
+    padding-top: 20px;
+}
+#btn{
+    text-align: center;
+    position: relative;top: 300px;
+}
+button{
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(224, 175, 110);
+    width: 100px;
+    background-color: aquamarine;
+}
+button:hover{
+    cursor: pointer;
+    color:rgb(0, 0, 0);
+}
+#result{
+    color: aliceblue;
+    font-size: 32px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+

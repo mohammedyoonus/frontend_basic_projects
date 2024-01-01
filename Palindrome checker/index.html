@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>palindrome checker</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="cfc">
+        <h1>Palindrome checker</h1>
+    <div id="input">
+        <textarea name="text1" id="text1" cols="60" rows="15" placeholder="Enter a text"></textarea>
+    </div>
+    <div id="btn">
+        <button onclick="check()">check</button>
+    </div>
+    <div id="result">
+
+
+
+    </div>
+    </div>
+    <script>
+       function check(){
+        let a=document.getElementById("text1").value
+        console.log(a)
+        const b=a.split("").reverse().join("")
+        console.log(b)
+        let c=0
+        if(a==b)
+        c="It is an palindrome"
+        else
+        c="Not an palindrome"
+        console.log(c)
+        let result=document.getElementById("result")
+        result.innerHTML=(c)
+       }
+    </script>
+
+</body>
+</html>

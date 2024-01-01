@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity bill calculator</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="cfc">
+        <h1>Electricity bill calculator</h1>
+    <div id="input">
+        <input type="text" id="text1" placeholder="Enter units">
+    </div>
+    <div id="btn">
+        <button onclick="calculate()">calculate</button>
+    </div>
+    <div id="result">
+
+
+
+    </div>
+    </div>
+    <script>
+       function calculate(){
+       let val1=Number(document.getElementById("text1").value)
+       let val2=0
+
+       if(val1<=50)
+       val2=val1*0.75
+       else if(val1>=50 && val1<=150)
+       val2=(val1-50)*1+(50*0.75)
+       else if(val1>=150 && val1<=250)
+       val2=(val1-150)*1.30+(50*0.75)+50
+       else if(val1>250)
+       val2=(val1-250)*1.50+(195)+(37.5)+(50)
+       else
+       val2=0
+
+       let result=document.getElementById("result")
+       result.innerHTML=`Rs.${val2}`
+}
+    </script>
+
+</body>
+</html>

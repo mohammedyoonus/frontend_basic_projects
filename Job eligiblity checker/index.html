@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job eligiblity checker</title>
+    <link rel="stylesheet" href="/cfstyle.css">
+</head>
+<body>
+    <div class="cfc">
+        <h1>Job eligiblity checker</h1>
+    <div id="input">
+        <div>
+            <input type="radio" id="Highschool" name="qualification">
+            <label for="Highschool" value="Highschool">Highschool</label>
+        </div>
+        <div>
+            <input type="radio" id="UG"name="qualification">
+            <labe for="UG" value="UG">UG</label>
+        </div>
+        <div>
+            <input type="radio" id="PG" name="qualification">
+        <label for="PG" value="PG">PG</label>
+        </div>
+        <div>
+            <input type="radio" id="Illiterate" name="qualification">
+            <label for="Illiterate" value="Illiterate">Illiterate</label>
+        </div>
+    </div>
+    <div id="btn">
+        <button for="btn">Check</button>
+    </div>
+    <div id="result">
+
+
+
+    </div>
+    </div>
+    <script>
+        const a=document.getElementById("btn")
+        a.addEventListener('click',Check)
+        function Check(){
+            const input=document.getElementById("input")
+            input.checked
+
+            if(document.getElementById('Highschool').checked) { 
+                document.getElementById("result").innerHTML 
+                = "You are not Eligible for Job";
+            }
+            else if(document.getElementById('UG').checked) { 
+                document.getElementById("result").innerHTML 
+                    ="Congrats You are Eligible for Job"
+            }
+            else if(document.getElementById('PG').checked) { 
+                document.getElementById("result").innerHTML 
+                    ="Congrats You are Eligible for Job"
+            }
+            else if(document.getElementById('Illiterate').checked) { 
+                document.getElementById("result").innerHTML 
+                    ="You are not Eligible for Job"
+        }
+    }
+    </script>
+
+</body>
+</html>
